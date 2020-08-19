@@ -1,7 +1,5 @@
-//
-// Sample outputs
-//
-
+import { Game } from './main.model'
+import { updateGameScore, decideGameWinner, printScore } from './main';
 
 describe('Player 1', () => {
   it('should win the game when the score is 4-0', () => {
@@ -10,7 +8,7 @@ describe('Player 1', () => {
     const player2Points = 0;
 
     // when
-    const game = updateGameScore(player1Points, player2Points);
+    const game: Game = updateGameScore(player1Points, player2Points);
     const winner = decideGameWinner(game);
 
     // then
@@ -23,7 +21,7 @@ describe('Player 1', () => {
     const player2Points = 3;
 
     // when
-    const game = updateGameScore(player1Points, player2Points);
+    const game: Game = updateGameScore(player1Points, player2Points);
     const winner = decideGameWinner(game);
 
     // then
@@ -38,7 +36,7 @@ describe('Player 2', () => {
     const player2Points = 4;
 
     // when
-    const game = updateGameScore(player1Points, player2Points);
+    const game: Game = updateGameScore(player1Points, player2Points);
     const winner = decideGameWinner(game);
 
     // then
@@ -51,7 +49,7 @@ describe('Player 2', () => {
     const player2Points = 5;
 
     // when
-    const game = updateGameScore(player1Points, player2Points);
+    const game: Game = updateGameScore(player1Points, player2Points);
     const winner = decideGameWinner(game);
 
     // then
