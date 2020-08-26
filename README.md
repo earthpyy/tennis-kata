@@ -25,7 +25,7 @@ Create a player from player number and points.
 #### Parameters
 Parameter | Type | Description
 --------- | ---- | -----------
-`playerNumber` | `1 | 2` | Player number
+`playerNumber` | `1 \| 2` | Player number
 `points` | `number` | Player points
 
 #### Return
