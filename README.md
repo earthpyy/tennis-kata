@@ -94,6 +94,7 @@ Points | Score
 
 #### Parameters
 Parameter | Type | Description
+--------- | ---- | -----------
 `points` | `number` | Points to convert
 
 #### Return
