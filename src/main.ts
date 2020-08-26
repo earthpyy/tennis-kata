@@ -1,7 +1,7 @@
 import { SCORES } from './main.constant';
 import { Game, Player } from './main.model';
 
-function createPlayer(playerNumber: number, points: number): Player {
+function createPlayer(playerNumber: 1 | 2, points: number): Player {
     return {
         name: `Player ${playerNumber}`,
         points
