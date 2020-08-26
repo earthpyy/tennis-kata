@@ -58,6 +58,18 @@ describe('Player 2', () => {
 });
 
 describe('Game', () => {
+  it('should throw error if no one wins', () => {
+    // given
+    const player1Points = 3;
+    const player2Points = 3;
+
+    // when
+    const game: Game = updateGameScore(player1Points, player2Points);
+
+    // then
+    expect(() => decideGameWinner(game)).toThrowError('No winner yet.');
+  });
+
   it('should print thirty - thirty when the score is 2-2', () => {
     // given
     const player1Points = 2;
